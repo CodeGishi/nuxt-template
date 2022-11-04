@@ -1,17 +1,24 @@
 <template>
   <div class="__content">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsa
-    voluptas repellat praesentium beatae earum dolores facilis sit incidunt
-    quidem mollitia accusamus eum nam, hic maxime iste illo! Nesciunt,
-    necessitatibus?
+    <template-component />
   </div>
 </template>
 
 <script>
+import TemplateComponent from "~/components/TemplateComponent.vue"
+
 export default {
   name: 'IndexPage',
+  components: {
+    TemplateComponent
+  },
 }
 </script>
 
 <style lang="scss" scoped>
+.__content {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
 </style>
